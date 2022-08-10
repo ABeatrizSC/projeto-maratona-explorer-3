@@ -1,0 +1,97 @@
+*{ /*seletor unversal */
+    margin: 0; /*remove todos os espaços (margin), margens*/
+    padding: 0; /*remove todos os preenchimentos*/
+  }
+  
+  /*  Seletor (body), chave (abre), propriedade (backgorund), dois pontos, valor(cor), ponto vírgula, 
+  chave (fecha)*/
+  body { /*fundo do documento */
+    background-color: #FFEDD5 ; /*transforma ele nesta cor*/
+    font-family: 'Roboto', sans-serif; /* Irá procurar (HTML) a fonte Roboto. Se não achar, colocará a sans-serif.*/
+  }
+  
+  ul { /*selecionei a TAG 'ul' (lista) */
+      list-style: none; /*Decidir qual o estilo da lista. none = nenhum*/
+  }
+  
+  /* FONTES */
+  
+  h1, h2, h3, .preço { /* Adicionando fonte a esses títulos*/
+    font-family: 'Roboto Serif', serif;
+    text-transform: uppercase; /* Deixar o texto em maiúsculo */
+    color: #2D2C2A; /* Adicionando a cor da fonte */
+  }
+  
+  h1 { /* Definindo tamanho da letra de h1*/
+    font-size: 28px;
+  }
+  
+  h2 { /* Definindo tamanho da letra de h2*/
+    font-size: 18px;
+  }
+  
+  h3 { /* Definindo tamanho da letra de h3*/
+    font-size: 16px;
+  }
+  
+  header { /* Editar apenas a header (Rocket Coffee) */
+    padding: 32px 0; /* Preenchimento de 32 pixels (em cima e embaixo) e 0 pixels nas laterais  */
+    text-align: center; /* Texto centralizado */
+  }
+  
+  section, header { /* Editar section e header */
+    max-width: 300px; /* Largura máxima da caixa */
+    border: 1px solid brown; /* Borda para visualizarmos a caixa */
+    margin: 0 auto; /* Deixa a caixa no meio */
+  }
+  
+  header h1 {
+    margin-bottom: 4px;
+  }
+  
+  header h1 span{ /* Procurar dentro no header o h1 que contém span (Coffee)*/
+    color: #995000;
+  }
+  
+  header p { /* Editando o 'p' (Aberto todos os dias)*/
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* SEÇÕES*/
+  
+  section{
+    margin-bottom: 24px; /* Espaço entre 'Brunch' e 'Bebidas'*/
+  }
+  
+  section h2{ /* Editar apenas o h2 (Brunch) */
+    background-color: #FED7AA; /* Mudar sua cor */
+    text-align: center;  /* Deixar centralizado */
+    margin-bottom:  24px; /*Espaço entre o 'Brunch' e 'Waffle Doce'
+    padding: 8px 16px /* Preenchimento de 8 pixels (em cima e embaixo) e 16 pixels nas laterais  */
+    font-size: 18px;
+  }
+  
+  /* EDIÇÕES DA LISTA (PRODUTOS DO CARDÁPIO)*/
+  
+  ul li { /* Editar a LISTA (Produtos do cardápio) */
+    margin-bottom: 16px; /* Espaço entre eles*/
+    display: flex; /* Coloca um elemento na lista do lado do outro (Nesse caso, o preço do lado 
+    do nome do produto */
+  }
+  
+  li .detalhes { /* Procure dentro de 'li' um elemento com a classe 'detalhes' */
+    max-width: 240px;
+  }
+  
+  .detalhes h3 { /* Arrumando alguns espaçamentos */
+    margin-bottom: 8px;
+  }
+  
+  .detalhes p {
+    color: rgba(0, 0, 0, 0.6); /* Cor encontrada ao inspecionar o arquivo. 0.6 = 60% dessa cor */
+    font-size: 14px;
+    line-height: 21px; /* Altura da linha (separações entre linhas */
+  }
+  
